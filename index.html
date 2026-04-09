@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="(주)네스트아이앤씨 - 홈페이지 제작중입니다.">
+    <title>(주)네스트아이앤씨 - 홈페이지 제작중</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">네스트아이앤씨<span></span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">NESTINC </span>
+                <h1 class="main-title">홈페이지 제작중</h1>
+                <p class="subtitle">더 나은 서비스로 찾아뵙겠습니다. 감사합니다.</p>
+
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-elements">
+                <div class="float-item box"></div>
+                <div class="float-item circle"></div>
+                <div class="float-item triangle"></div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title hidden">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card hidden delay-1">
+                    <div class="icon">🚀</div>
+                    <h3>차량 전장</h3>
+                    <p>전동식 압축기용 인버터.</p>
+                </div>
+                <div class="service-card hidden delay-2">
+                    <div class="icon">💡</div>
+                    <h3>차량 공조</h3>
+                    <p>버스 공조 제어 장치(DC&BLDC).</p>
+                </div>
+                <div class="service-card hidden delay-3">
+                    <div class="icon">⚙️</div>
+                    <h3>모터 드라이버</h3>
+                    <p>콤바인 이양기 트랙터 모터드라이보 개발 양산.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container hidden">
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p>비즈니스 문의나 궁금하신 점이 있으시면 언제든지 연락주세요.</p>
+                    <div class="info-item">
+                        <span class="info-label">Phone</span>
+                        <span class="info-value">031 750 0900</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value">nest@nestinc.co.kr</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">이름 (Name)</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">이메일 (Email)</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message">문의 내용 (Message)</label>
+                    </div>
+                    <button type="submit" class="submit-btn" disabled>보내기</button>
+                    <p class="form-notice">* 현재 홈페이지 제작 중으로 폼 전송이 불가합니다.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 (주)네스트아이앤씨 (NESTINC Co., LTD). All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
