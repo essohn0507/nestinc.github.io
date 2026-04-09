@@ -178,6 +178,15 @@ section {
     gap: 25px;
 }
 
+.center-logo {
+    max-width: 380px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+    animation: slideDown 1s ease forwards;
+}
+
 .badge {
     background: rgba(255, 255, 255, 0.4);
     border: 1px solid rgba(0, 0, 0, 0.05);
