@@ -559,15 +559,91 @@ section {
 
 @media (max-width: 768px) {
     section {
-        padding: 100px 20px;
+        padding: 80px 20px;
     }
+    
+    .nav-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
     .nav-links {
-        display: none; /* simple mobile behavior for now */
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .badge {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
     .main-title {
-        font-size: 2.8rem;
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+        word-break: keep-all;
     }
+
+    .subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+    
+    .input-group input,
+    .input-group textarea {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .triangle {
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid rgba(255,255,255,0.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .info-value {
+        font-size: 1.4rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
     }
 }
