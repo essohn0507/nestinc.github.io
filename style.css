@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #030305;
-    --text-primary: #ffffff;
-    --text-secondary: #9090a8;
+    --bg-color: #f2f2f5;
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
     --accent-1: #6E3AFF;
-    --accent-2: #00E5FF;
-    --glass-bg: rgba(255, 255, 255, 0.02);
-    --glass-border: rgba(255, 255, 255, 0.05);
+    --accent-2: #009cbc;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -45,7 +45,7 @@ body {
     left: -10%;
     width: 40vw;
     height: 40vw;
-    background: radial-gradient(circle, rgba(110,58,255,0.3) 0%, rgba(0,0,0,0) 60%);
+    background: radial-gradient(circle, rgba(110,58,255,0.2) 0%, transparent 60%);
 }
 
 .shape-2 {
@@ -53,7 +53,7 @@ body {
     right: -10%;
     width: 50vw;
     height: 50vw;
-    background: radial-gradient(circle, rgba(0,229,255,0.2) 0%, rgba(0,0,0,0) 60%);
+    background: radial-gradient(circle, rgba(0,156,188,0.15) 0%, transparent 60%);
     animation-delay: -5s;
 }
 
@@ -62,7 +62,7 @@ body {
     left: 50%;
     width: 30vw;
     height: 30vw;
-    background: radial-gradient(circle, rgba(255,58,200,0.15) 0%, rgba(0,0,0,0) 60%);
+    background: radial-gradient(circle, rgba(255,58,200,0.1) 0%, transparent 60%);
     animation-delay: -10s;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(3, 3, 5, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
@@ -105,7 +105,7 @@ body {
 }
 
 .logo span {
-    color: var(--accent-2);
+    color: var(--accent-1);
 }
 
 .nav-links {
@@ -158,7 +158,7 @@ section {
     font-weight: 800;
     margin-bottom: 60px;
     text-align: center;
-    background: linear-gradient(135deg, #fff, #888);
+    background: linear-gradient(135deg, #1d1d1f, #888888);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -179,14 +179,14 @@ section {
 }
 
 .badge {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 10px 24px;
     border-radius: 30px;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 3px;
-    color: var(--accent-2);
+    color: var(--accent-1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     animation: slideDown 1s ease forwards;
@@ -197,7 +197,7 @@ section {
     font-weight: 800;
     line-height: 1.1;
     margin: 15px 0;
-    text-shadow: 0 0 40px rgba(110,58,255,0.4);
+    text-shadow: 0 0 40px rgba(110,58,255,0.2);
     letter-spacing: -2px;
 }
 
@@ -207,7 +207,7 @@ section {
     max-width: 600px;
     animation: fadeInUp 1s ease 0.5s forwards;
     opacity: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Floating Anti-Gravity Elements inside Hero */
@@ -223,11 +223,11 @@ section {
 
 .float-item {
     position: absolute;
-    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
-    border: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+    border: 1px solid rgba(0,0,0,0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
 
 .box {
@@ -253,7 +253,7 @@ section {
     height: 0;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-bottom: 80px solid rgba(255,255,255,0.05);
+    border-bottom: 80px solid rgba(255,255,255,0.7);
     background: none;
     border-top: none;
     border-radius: 0;
@@ -261,7 +261,7 @@ section {
     top: 25%;
     right: 20%;
     animation: floatItem1 12s infinite ease-in-out 2s;
-    filter: drop-shadow(0 20px 20px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 20px 20px rgba(0,0,0,0.05));
 }
 
 @keyframes floatItem1 {
@@ -336,15 +336,15 @@ section {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: linear-gradient(135deg, rgba(110,58,255,0.1), transparent);
+    background: linear-gradient(135deg, rgba(110,58,255,0.05), transparent);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 .service-card:hover {
     transform: translateY(-20px);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
 }
 
 .service-card:hover::before {
@@ -355,7 +355,7 @@ section {
     font-size: 3.5rem;
     margin-bottom: 25px;
     display: inline-block;
-    filter: drop-shadow(0 0 10px rgba(110,58,255,0.5));
+    filter: drop-shadow(0 0 10px rgba(110,58,255,0.2));
 }
 
 .service-card h3 {
@@ -366,7 +366,7 @@ section {
 
 .service-card p {
     color: var(--text-secondary);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.05rem;
 }
 
@@ -381,7 +381,7 @@ section {
     padding: 70px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.05);
 }
 
 .contact-info .section-title {
@@ -394,7 +394,7 @@ section {
     color: var(--text-secondary);
     margin-bottom: 50px;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .info-item {
@@ -404,11 +404,11 @@ section {
 .info-label {
     display: block;
     font-size: 0.85rem;
-    color: var(--accent-2);
+    color: var(--accent-1);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .info-value {
@@ -431,8 +431,8 @@ section {
 .input-group input,
 .input-group textarea {
     width: 100%;
-    background: rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 16px;
     padding: 20px;
     color: var(--text-primary);
@@ -454,13 +454,13 @@ section {
     color: var(--text-secondary);
     pointer-events: none;
     transition: all 0.3s ease;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
     border-color: var(--accent-1);
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.9);
     box-shadow: 0 0 20px rgba(110,58,255,0.1);
 }
 
@@ -471,10 +471,12 @@ section {
     top: -12px;
     left: 15px;
     font-size: 0.85rem;
-    background: var(--bg-color);
+    background: var(--glass-bg);
     padding: 0 8px;
-    color: var(--accent-2);
-    font-weight: 500;
+    color: var(--accent-1);
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
 }
 
 .submit-btn {
@@ -508,7 +510,7 @@ section {
     border-top: 1px solid var(--glass-border);
     color: var(--text-secondary);
     font-size: 0.95rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Animations */
@@ -626,7 +628,7 @@ section {
     .triangle {
         border-left: 25px solid transparent;
         border-right: 25px solid transparent;
-        border-bottom: 50px solid rgba(255,255,255,0.05);
+        border-bottom: 50px solid rgba(255,255,255,0.7);
     }
 }
 
