@@ -89,21 +89,21 @@
                     </div>
                 </div>
 
-                <form class="contact-form" onsubmit="event.preventDefault();">
+                <form id="contact-form" class="contact-form">
                     <div class="input-group">
-                        <input type="text" id="name" required placeholder=" ">
+                        <input type="text" id="name" name="user_name" required placeholder=" ">
                         <label for="name">이름 (Name)</label>
                     </div>
                     <div class="input-group">
-                        <input type="email" id="email" required placeholder=" ">
+                        <input type="email" id="email" name="user_email" required placeholder=" ">
                         <label for="email">이메일 (Email)</label>
                     </div>
                     <div class="input-group">
-                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
                         <label for="message">문의 내용 (Message)</label>
                     </div>
-                    <button type="submit" class="submit-btn" disabled>보내기</button>
-                    <p class="form-notice">* 현재 홈페이지 제작 중으로 폼 전송이 불가합니다.</p>
+                    <button type="submit" id="submit-btn" class="submit-btn">보내기</button>
+                    <p class="form-notice" id="form-status"></p>
                 </form>
             </div>
         </section>
@@ -113,6 +113,7 @@
         <p>&copy; 2026 (주)네스트아이앤씨 (NESTINC Co., LTD). All rights reserved.</p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="app.js"></script>
 </body>
 
