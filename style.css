@@ -496,11 +496,20 @@ section {
     color: white;
     font-size: 1.15rem;
     font-weight: 700;
-    cursor: not-allowed;
-    opacity: 0.5;
+    cursor: pointer;
     transition: all 0.3s;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(110,58,255,0.2);
+}
+
+.submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .form-notice {
